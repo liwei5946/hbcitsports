@@ -51,7 +51,7 @@ function changeSports()
             <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td width="6%" height="19" valign="bottom"><div align="center"><img src="${pageContext.request.contextPath }/images/tb.gif" width="14" height="14" /></div></td>
-                <td width="94%" valign="bottom"><span class="pageTitle">欢迎使用SMMS运动会综合管理系统</span></td>
+                <td width="94%" valign="bottom"><span class="pageTitle">欢迎使用SMMS体育赛事综合管理系统</span></td>
               </tr>
             </table></td>
             <td>
@@ -74,6 +74,6 @@ function changeSports()
   </tr>
 </table>
 <br />
-<div align="center"><span class="pageJump">欢迎使用SMMS运动会综合管理系统</span></div>
+<div align="center"><span class="pageJump">欢迎使用SMMS体育赛事综合管理系统</span></div>
 </body>
 </html>

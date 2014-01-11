@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="icon" href="images/ico.png">
 <link rel="shortcut icon" href="images/ico.png">
-<title>SMMS运动会综合管理系统</title>
+<title>SMMS体育赛事综合管理系统</title>
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/subcss.css"/>
 <script type="text/javascript" src="js/js.js"></script>
