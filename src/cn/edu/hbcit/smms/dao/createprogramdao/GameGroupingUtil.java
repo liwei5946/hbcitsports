@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 
 /**
  * 工具类
- * @author 韩鑫鹏
+ * @author 李玮
  */
 public class GameGroupingUtil {
 	
@@ -248,100 +248,8 @@ public class GameGroupingUtil {
 		
 	}
 	
-//	/**
-//	 * 1500sql连接
-//	 * @param sql 被连接的sql语句
-//	 * @param players 1500 运动员数目
-//	 * @param group 分组情况
-//	 * @param finalitemid
-//	 * @param count 添加记录计数
-//	 */
-//	public void sql1500(StringBuffer sql, ArrayList players, int[] group, int finalitemid, int count){
-//		for (int q = 0; q < group[1]; q++){
-//			int playerid = Integer.parseInt(players.get(q).toString().trim());
-//    		if (count > 0){ sql.append(","); }
-//    		sql.append("(" + finalitemid + "," + 1+ "," + null + "," + playerid + ")");
-//    		++count;
-//    	}
-//		for (int ak = group[1]; ak < players.size(); ak++){
-//    		int playerid = Integer.parseInt(players.get(ak).toString().trim());
-//    		sql.append("(" + finalitemid + "," + 2 + "," + null + "," + playerid + ")");
-//    		++count;
-//    	}
-//	}
-//	
-//	/**
-//	 * 径赛sql连接
-//	 * @param sql
-//	 * @param group
-//	 * @param players
-//	 * @param finalitemid
-//	 * @param count
-//	 */
-//	public void sqlTrack(StringBuffer sql, int[] group, ArrayList players, int finalitemid, int count){
-//		log.debug("径赛sql连接players的长度是：" + players.size());
-//		log.debug("径赛sql连接group的长度是：" + group.length);
-//		int count1 = 0;
-//    	for (int groupNum = 0; groupNum < group.length; groupNum++){
-//    		ArrayList qw = new ArrayList();
-//    		for (int eGroupNum = 0; eGroupNum < group[groupNum]; eGroupNum++){
-//    			log.debug("径赛sql连接group[groupNum]的值是：" + group[groupNum]);
-//    			qw.add(players.get(count1));
-//    			log.debug("径赛sql连接eGroupNum的值是：" + eGroupNum);
-//    			log.debug("径赛sql连接count1的值是：" + count1);
-//    			++count;
-//    		}
-//    		arrayListRandom(qw);
-//			int teamnum = groupNum + 1;
-//			
-//    		for (int ee = 0; ee < group[groupNum]; ee++){
-//    			if (count > 0){
-//    				sql.append(",");
-//    			}
-//    			//finalitemid,teamnum,runway,playerid 顺序
-//    			int runway = ee + 1;
-//    			int playerid = Integer.parseInt(qw.get(ee).toString().trim());
-//    			sql.append("("+  finalitemid + "," + teamnum + "," + runway + "," + playerid + ")");
-//    			++count;
-//    		}
-//    		
-//    	}
-//	}
-//	
-//	/**
-//	 * 田赛类sql连接
-//	 * @param sql
-//	 * @param players
-//	 * @param finalitemid
-//	 * @param count
-//	 */
-//	public void sqlFiled(StringBuffer sql, ArrayList players, int finalitemid, int count){
-//		for (int q = 0; q < players.size(); q++){
-//			int playerid = Integer.parseInt(players.get(q).toString().trim());
-//    		if (count > 0){ sql.append(","); }
-//    		sql.append("(" + finalitemid + "," + 1+ "," + null + "," + playerid + ")");
-//    		++count;
-//    	}
-//		
-//	}
-//	
-//	/**
-//	 * 修该分组分组数目sql连接
-//	 * @param sql 被连接的sql语句
-//	 * @param finalitemid  最终项目id
-//	 * @param count 修改记录计数
-//	 * @param groupNum分组数目
-//	 */
-//	public void sqlUpdateGroup(StringBuffer sql, int finalitemid, int count, int groupNum){
-//		log.debug("修改分组的sql的count是：" + count);
-//		if (count > 0){
-//			sql.append("#");
-//		}
-//		sql.append("UPDATE t_finalitem SET groupnum = " + groupNum + " WHERE id = " + finalitemid);
-//		++count;
-//	}
     /**
-     * 运动员按照计算机系、建工系——计算机系、建工系。。。排列
+     * 运动员按照如：计算机系、建工系——计算机系、建工系。。。排列
      * @param players 运动员id集合
      * @param pla2dep 运动员id，部门id对照HashMap
      * @param departmentid 部门id集合

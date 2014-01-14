@@ -10,11 +10,6 @@ import cn.edu.hbcit.smms.services.createprogramservices.DataManagerServices;
 import com.lowagie.text.Document;
 import com.lowagie.text.PageSize;
 
-/**
- * 
- * @author 韩鑫鹏
- *
- */
 public class SetWordDAO {
 
 	public void AddGroupInfo(String site, HashMap allGirlPlayers, HashMap allBoyPlayers, 

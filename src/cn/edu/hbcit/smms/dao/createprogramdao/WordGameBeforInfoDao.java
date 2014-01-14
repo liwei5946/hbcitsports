@@ -1,20 +1,8 @@
 package cn.edu.hbcit.smms.dao.createprogramdao;
 
 /*
- * Copyright(C) 2012, 河北工业职业技术学院计算机系2010软件专业.
- *
  * 模块名称：     生成秩序册
  * 子模块名称：   赛前相关的设置
- *
- * 
- *
- * 修改历史：
- * 时间			                 版本号	姓名		修改内容
- * 2012-09-110        0.1      田小英          新建
- */
-/**
- * @author 田小英
- *
  */
 import java.awt.Color;
 import java.io.FileNotFoundException;
@@ -39,10 +27,6 @@ public class WordGameBeforInfoDao {
 	/**
 	 * 创建word文档 步骤: 1,建立文档 2,创建一个书写器 3,打开文档 4,向文档中写入数据 5,关闭文档
 	 */
-
-
-
-		
 		public void wordDocument( String filePath, String fileName, Map gameInfoMap, Map fildJudgeMap, Map getGameDate, 
 				Map getItemByMale, Map getItemByFemale, List studentList, List teacherList,
 				Map getGameDateInfo){
@@ -893,10 +877,7 @@ public class WordGameBeforInfoDao {
 					judgeCell.setBorderWidth(0);
 					judgeTable.addCell(judgeCell);
 				}
-				
-				
-				
-				
+
 				Paragraph gameRules = new Paragraph("大会竞赛规程", new Font(Font.NORMAL, 18,
 						Font.BOLD, new Color(0, 0, 0)));
 				gameRules.setAlignment(1);
@@ -929,10 +910,7 @@ public class WordGameBeforInfoDao {
 				Paragraph pRemarks3 = new Paragraph((String)gameInfoMap.get("remarks3"));
 				Paragraph remarks4 = new Paragraph("六、其他");
 				Paragraph pRemarks4 = new Paragraph((String)gameInfoMap.get("remarks4"));
-				
-				
-				
-				
+
 				Paragraph meetingDiscipline = new Paragraph("大会纪律", new Font(Font.NORMAL, 18,
 						Font.BOLD, new Color(0, 0, 0)));
 				meetingDiscipline.setAlignment(1);
@@ -1197,7 +1175,6 @@ public class WordGameBeforInfoDao {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-
 
 	}
 

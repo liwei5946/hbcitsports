@@ -13,8 +13,6 @@ import com.lowagie.text.rtf.RtfWriter2;
 
 /**
  * 秩序册——赛事分组 word生成
- * @author 韩鑫鹏
- * 2012——06——19 17:12
  */
 public class SetWordUtil {
 

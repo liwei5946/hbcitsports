@@ -13,7 +13,7 @@ import org.logicalcobwebs.proxool.ProxoolFacade;
 import org.logicalcobwebs.proxool.admin.SnapshotIF;
 /**
  * 数据库操作类
- * @author 田小英
+ * @author 李玮
  * 修改：2012-06-04 修改数据库连接池  BY liwei
  *
  */

@@ -9,7 +9,7 @@ import org.apache.log4j.Logger;
 
 /**
  * 赛事编排
- * @author 韩鑫鹏
+ * @author 李玮
  *
  */
 public class GameGroupingDAO {

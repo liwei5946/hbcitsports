@@ -18,28 +18,9 @@ import cn.edu.hbcit.smms.pojo.QueryRegistitemToItems;
 import cn.edu.hbcit.smms.pojo.QuerySeInfoData;
 import cn.edu.hbcit.smms.util.UtilTools;
 
-/*
- * Copyright(C) 2004, XXXXXXXX.
- *
- * 模块名称：     AAAAAAAAAAA
- * 子模块名称：   BBBBBBBBBBB
- *
- * 备注：
- *
- * 修改历史：
- * 时间			版本号	姓名:袁仕杰		修改内容
- * 
- * 
- */
 public class GameQuerySelectInfDAO  {
 	/**
 	 * GameQuerySelectInfDAO类
-	 *
-	 *简要说明
-	 *
-	 *详细解释。
-	 * @author 袁仕杰
-	 * @version 1.00  2011/12/07 新規作成<br>
 	 */
 	private Statement stmt = null;
 	private PreparedStatement pstmt = null;

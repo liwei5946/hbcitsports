@@ -19,22 +19,6 @@ import cn.edu.hbcit.smms.pojo.T_finalitemPojo;
 import cn.edu.hbcit.smms.pojo.T_groupPojo;
 import cn.edu.hbcit.smms.pojo.Track1500PlayerPojo;
 
-/*
- * Copyright(C) 2012, 河北工业职业技术学院计算机系2010软件专业.
- *
- * 模块名称：     生成秩序册
- * 子模块名称：   赛事分组
- *
- * 备注： 赛事分组需要的数据库操作类
- *
- * 修改历史：
- * 时间			                 版本号	姓名		修改内容
- * 2012006-13 15:33   0.1      韩鑫鹏          新建
- */
-/**
- * @author 韩鑫鹏
- *
- */
 public class DataManagerDAO {
 	protected final Logger log = Logger.getLogger(DataManagerDAO.class.getName());
 	DBConn db = new DBConn();
@@ -579,44 +563,7 @@ public class DataManagerDAO {
             return name;
     }
     
-    /**
-     * 根据finalitemid查询长跑类运动员信息
-     * @param finalitemid
-     * @return  ArrayList  编号+组号
-     */
-   /* public ArrayList slectTrack1500Ps(int finalitemid){
-    	
-    	ArrayList pn = new ArrayList();
-    	
-    	String sql = "SELECT t_player.playernum,t_match.teamnum FROM t_match JOIN t_player ON " +
-    			"t_match.playerid = t_player.id WHERE t_match.finalitemid = ? ORDER BY t_match.teamnum";
-	    try {
-            Connection conn = db.getConn();
-            if(conn != null){
-            	ResultSet rs = null;
-                PreparedStatement statement = conn.prepareStatement(sql);
-                statement.setInt(1, finalitemid);
-                rs = statement.executeQuery(); 
-                while(rs.next()){
-             	   String pnum = rs.getString(1);
-             	   int runway = rs.getInt(2);
-             	   pnum = pnum+"("+runway+")";
-             	   pn.add(pnum);
-             	   
-                }
-                
-                rs.close();
-            }
-    
-    
-    
-        
-            db.freeConnection(conn);  
-            }catch (SQLException e) {                 
-            e.printStackTrace(); } 
-            return pn;
-    }*/
-    
+ 
     public List slectTrack1500Ps(int finalitemid){
     	List list = new ArrayList();
 		try {

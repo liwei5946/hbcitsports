@@ -1,7 +1,3 @@
-
-/**
- * 
- */
 package cn.edu.hbcit.smms.dao.createprogramdao;
 
 import java.sql.Connection;
@@ -22,9 +18,6 @@ import cn.edu.hbcit.smms.pojo.OfficialPojo;
 import cn.edu.hbcit.smms.pojo.SportRecordPojo;
 import cn.edu.hbcit.smms.pojo.StudentJudgePojo;
 
-
-
-
 public class SelectGameInfoDao {
 	protected final Logger log = Logger.getLogger(SelectGameInfoDao.class
 			.getName());
@@ -32,10 +25,6 @@ public class SelectGameInfoDao {
 	private Connection conn;
 	private PreparedStatement ps;
 	private ResultSet rs;
-	
-	
-	
-	
 
 	/**
 	 * 获取大会主席团及工作人员的信息
@@ -577,18 +566,15 @@ public class SelectGameInfoDao {
 	}
 	
 	/**
-	 * 河北工院田径运动会的记录
+	 * 田径运动会的记录
 	 * @return List
 	 */
-	
 	
 	public List getGameRecord() {
 		List gameRecord = new ArrayList();
 		DBConn db = new DBConn();
 		try {
 			StringBuffer sql = new StringBuffer();
-			
-			
 			for( int j = 0; j < 2; j++){
 			conn = db.getConn();
 			sql.append(" SELECT t_record.sex,t_item.itemname,t_record.score,");
